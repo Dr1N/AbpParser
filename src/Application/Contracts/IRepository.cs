@@ -3,7 +3,7 @@
 namespace Application.Contracts;
 
 /// <summary>
-/// Repository contract for CRUD operations
+/// Repository contract
 /// </summary>
 /// <typeparam name="T">Entity type</typeparam>
 public interface IRepository<T>

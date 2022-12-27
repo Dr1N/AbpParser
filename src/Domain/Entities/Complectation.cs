@@ -6,6 +6,7 @@ namespace Domain.Entities;
 
 /// <summary>
 /// Car model complectation
+/// Broke encapsulation for AutoMapper
 /// </summary>
 public class Complectation : Entity<int>, IEquatable<Complectation>
 {
@@ -97,7 +98,7 @@ public class Complectation : Entity<int>, IEquatable<Complectation>
     
     public int ModelId { get; set; }
     
-    public Model Model { get; private set; }
+    public Model Model { get; }
 
     public IReadOnlyCollection<Group> Groups => groups.AsReadOnly();
 

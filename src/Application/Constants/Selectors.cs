@@ -1,7 +1,7 @@
 ﻿namespace Application.Constants;
 
 /// <summary>
-/// CSS selectors for parsing data
+/// CSS selectors for parsing
 /// </summary>
 public static class Selectors
 {

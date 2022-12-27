@@ -137,8 +137,6 @@ public class ManufacturerParser : IManufacturerParser
             
         // Manufacturer models
         var models = (await modelsParser.ParseAsync(modelsPage, token))
-            .Skip(1)
-            .Take(1) // TODO: test
             .ToList();
         manufacturerDto.Models.AddRange(models);
             
